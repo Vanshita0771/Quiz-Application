@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" conten t="width=device-width, initial-scale=1.0">
+    <title>Javascript quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!--Start Quiz-->
+     <h1 class="heading">Exciting Quiz</h1>
+     <div class="start_btn">
+        <form>
+            <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center;">Enter your credentials</h2>
+            <br>
+            <table cellpadding="5px" cellspacing="5px">
+              <tr>
+               <td>Name:</td>
+               <td><input type="text" id="fname"></td>
+              </tr>  
+              <tr>
+               <td>Father Name:</td>
+               <td><input type="text" id="fathername"></td>
+              </tr>
+              <tr>
+               <td>Email:</td>
+               <td><input type="email" id="mail"></td>
+              </tr>
+              <tr>
+               <td>Phone Number:</td>
+               <td><input type="tel" id="phone_no" maxlength="10" minlength="10"></td>
+              </tr>
+          </table>
+          <div>
+           <button type="button" >Start Quiz</button>
+         </div>
+        </form> 
+    </div>
+    <!--Info Box-->
+    
+    <div class="info_box">
+        <div class="info-title">
+            Some rules of this quiz
+        
+        </div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 sec</span> per each question</div>
+            <div class="info">2. Once you select your answer,it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            
+            <button class="restart">Continue</button>
+        </div>
+    
+    </div>
+
+    <!--Quiz Box-->
+   
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                 <div class="timer_sec" ></div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+               
+            </div>
+            <div class="option_list">
+                
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+               
+            </div>
+            <button type="button" class="next_btn">Submit</button>
+        </footer>
+    </div>
+    <!--Result Box-->
+    <div  class="result_box">
+        <div class="details">
+       </div>
+       
+       <div class= "score_text">
+           <span>
+       </span>
+   </div>
+   </div>
+<script src="quiz.js"></script>
+</body>
+</html>

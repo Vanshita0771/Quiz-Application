@@ -7,7 +7,7 @@ const continue_btn=document.querySelector(".buttons .restart");
 const quiz_box=document.querySelector(".quiz_box");
 const start_btn=document.querySelector(".start_btn button");
 
-const startingMinutes=1;
+const startingMinutes=2;
 let time=startingMinutes*60;
 const countdownEl=document.querySelector(".timer_sec");
 function updateCountDown(){
